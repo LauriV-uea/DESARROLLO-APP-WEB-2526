@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(24, 185, 24);
+    text-align: center;
+}
+
+
+.controls {
+    margin-bottom: 20px;
+
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    left: 0;
+    justify-content: start;
+    align-items: start;
+} 
+
+.gallery img {
+    width: 1000%;
+    height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.selected {
+    box-shadow: 0 0 15px 5px #df0095;
+}
