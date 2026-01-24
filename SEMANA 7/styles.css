@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rosybrown;
+}
+
+
+ button {
+    background-color: rgb(185, 121, 244);
+    color: rgb(24, 41, 24);
+    border:none;
+    padding: 6px 12px;
+ }
+
+ input {
+    margin: 4px;
+    padding: 4px;
+ }
+
+
