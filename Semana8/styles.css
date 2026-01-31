@@ -1,0 +1,49 @@
+
+body {
+    background-color: beige;
+}
+
+h3 {
+    color: #4a0f3a;
+    margin-bottom: 15px;
+}
+
+form {
+    background: rgb(236, 144, 144);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(red, rgb(6, 4, 88), blue, alpha);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.carousel img{
+ 
+    height: 700px;
+    color: rgb(78, 141, 118);
+   
+}
+
+
+
+
+.carousel-caption h5, .carousel-caption p {
+    color: rgb(173, 29, 106);
+    padding: 1rem;
+    border-radius: 10px;
+    background:rgba(red, green, blue, alpha)
+}
+.table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+

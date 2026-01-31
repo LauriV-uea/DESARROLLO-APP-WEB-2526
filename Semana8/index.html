@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleUrban - Tienda de ropa </title>
+
+    <!-- Bootstrap CSS obtenido de la fuente oficial -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!--CSS propio-->
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">StyleUrban</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Main-->
+    <div class="container my-4">
+
+    <!--Carrusel-->
+    <div id="carouselRopa" class="carousel slide mb-5" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="assets/img/Camisa.jpg" class="d-block w-100" alt="Camisa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Camisa oversize</h5>
+                    <p>comodidad y estilo urbano</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/Chaqueta.jpg" class="d-block w-100" alt="Chaqueta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chaqueta moderna</h5>
+                    <p>perfecta para cualquier temporada</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="assets/img/pantalon.jpg" class="d-block w-100" alt="Pantalón">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pantalón </h5>
+                    <p>comodidad y estilo para tu día a día</p>
+                </div> 
+            </div>
+             <div class="carousel-item" data-bs-interval="1000">
+                <img src="assets/img/camisadepo.jpg" class="d-block w-100" alt="Camisa deportiva">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Camisa deportiva</h5>
+                    <p>ligera, cómoda y perfecta para ti</p>
+                </div> 
+            </div>
+             <div class="carousel-item" data-bs-interval="1000">
+                <img src="assets/img/chaquevintage.jpg" class="d-block w-100" alt="Chaqueta vintage">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chaqueta vintage </h5>
+                    <p>un clásico retro que marca tendencia</p>
+                </div> 
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRopa" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRopa" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!--Tabla-->
+    <h2 class="mb-3">Productos Destacados</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Código</th>
+                    <th>Prenda</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C01</td>
+                    <td>Camisa Oversize</td>
+                    <td>$20</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>C02</td>
+                    <td>Jean Sara</td>
+                    <td>$50</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>C03</td>
+                    <td>Chaqueta Lucky</td>
+                    <td>$45</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>C04</td>
+                    <td>Camisa deportiva</td>
+                    <td>$25</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>C05</td>
+                    <td>Chaqueta vintage</td>
+                    <td>$45</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Botón de alerta-->
+    <button class="btn btn-warning my-4" onclick="mostrarAlerta()">Promoción Especial</button>
+
+    <!--Formulario-->
+    <h3>Contacto</h3>
+    <form id="formContacto">
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control">
+            <small class="text-danger" id="errorNombre"></small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Correo</label>
+            <input type="email" id="correo" class="form-control">
+            <small class="text-danger" id="errorCorreo"></small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control"></textarea>
+            <small class="text-danger" id="errorMensaje"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>    
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+    ©  2026 StyleUrban | Instagram | Facebook | X
+</footer>
+
+
+
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+   
